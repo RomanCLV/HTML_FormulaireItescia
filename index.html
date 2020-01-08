@@ -221,15 +221,15 @@
                                 <tbody>
                                     <tr>
                                         <td>Nom :</td>
-                                        <td><input type="text" name="userName"></td>
+                                        <td><input type="text" name="userName" required></td>
                                     </tr>
                                     <tr>
                                         <td>Prénom :</td>
-                                        <td><input type="text" name="userFirstName"></td>
+                                        <td><input type="text" name="userFirstName" required></td>
                                     </tr>
                                     <tr>
                                         <td>Adresse :</td>
-                                        <td><input type="text" name="userAdresse"></td>
+                                        <td><input type="text" name="userAdresse" required></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -237,7 +237,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>CP :</td>
-                                                        <td><input type="text" name="userCp"></td>
+                                                        <td><input type="text" name="userCp" required></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -247,7 +247,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>Ville :</td>
-                                                        <td><input type="text" name="userCity"></td>
+                                                        <td><input type="text" name="userCity" required></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -255,28 +255,28 @@
                                     </tr>
                                     <tr>
                                         <td>Tél. fixe :</td>
-                                        <td><input type="tel" name="userPhoneFixe"></td>
+                                        <td><input type="tel" name="userPhoneFixe" required></td>
                                     </tr>
                                     <tr>
                                         <td>Portable :</td>
-                                        <td><input type="tel" name="userPhone"></td>
+                                        <td><input type="tel" name="userPhone" required></td>
                                     </tr>
                                     <tr>
                                         <td>E-Mail :</td>
-                                        <td><input type="email" name="userEmail"></td>
+                                        <td><input type="email" name="userEmail" required></td>
                                     </tr>
                                     <tr>
                                         <td>Date de naissance :</td>
-                                        <td><input type="date" name="userBirthday"></td>
+                                        <td><input type="date" name="userBirthday" required></td>
                                     </tr>
                                     <tr>
                                         <td>Nationalité :</td>
                                         <td>
-                                            <input type="radio" name="chooseNationality" value="Fr">
+                                            <input type="radio" name="chooseNationality" value="Fr" required>
                                             <label for="chooseNationality">Française</label>
-                                            <input type="radio" name="chooseNationality" value="Ue">
+                                            <input type="radio" name="chooseNationality" value="Ue" required>
                                             <label for="chooseNationality">UE</label>
-                                            <input type="radio" name="chooseNationality" value="HUe">
+                                            <input type="radio" name="chooseNationality" value="HUe" required>
                                             <label for="chooseNationality">Hors UE</label>
                                         </td>
                                     </tr>
@@ -287,20 +287,20 @@
     
                     <div id="studyContainer">
                         <h2>Votre scolarité :</h2>
-                        <div class="typeContainer" id="studyContainerDiv">
+                        <div class="typeContainer" id="studyContainerDiv" >
                             <table>
                                 <tbody>
                                     <tr>
                                         <td>Niveau de formation actuel :</td>
-                                        <td><input type="text" name="currentStudy"></td>
+                                        <td><input type="text" name="currentStudy" required></td>
                                     </tr>
                                     <tr>
                                         <td>Etablissement actuel (nom et ville) :</td>
-                                        <td><input type="text" name="currentSchool"></td>
+                                        <td><input type="text" name="currentSchool" required></td>
                                     </tr>
                                     <tr>
                                         <td>Dernier diplôme obtenu :</td>
-                                        <td><input type="text" name="lastDiploma"></td>
+                                        <td><input type="text" name="lastDiploma" required></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -314,12 +314,12 @@
                                 <tbody>
                                     <tr>
                                         <td>N°2 :</td>
-                                        <td><input type="text" name="secondWhish"></td>
+                                        <td><input type="text" name="secondWhish" required></td>
                                     </tr>
                                     <tr>
                                         <td>Niveau d'entrée :</td>
                                         <td>
-                                            <select name="secondWishLevel">
+                                            <select name="secondWishLevel" required>
                                                 <option value="">--Please choose an option--</option>
                                                 <option value="L1">L1</option>
                                                 <option value="L2">L2</option>
@@ -331,12 +331,12 @@
                                     </tr>
                                     <tr>
                                         <td>N°3 :</td>
-                                        <td><input type="text" name="thirdWhish"></td>
+                                        <td><input type="text" name="thirdWhish" required></td>
                                     </tr>
                                     <tr>
                                             <td>Niveau d'entrée :</td>
                                         <td>
-                                            <select name="secondWishLevel">
+                                            <select name="secondWishLevel" required>
                                                 <option value="">--Please choose an option--</option>
                                                 <option value="L1">L1</option>
                                                 <option value="L2">L2</option>
@@ -358,11 +358,11 @@
                                 <tbody>
                                     <tr>
                                         <td>Nom, Prénom :</td>
-                                        <td><input type="text" name="itescianHelperName"></td>
+                                        <td><input type="text" name="itescianHelperName" required></td>
                                     </tr>
                                     <tr>
                                         <td>Formation suivie :</td>
-                                        <td><input type="text" name="itescianHelperFormation"></td>
+                                        <td><input type="text" name="itescianHelperFormation" required></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -376,33 +376,33 @@
                                 <tr>
                                     <td>Contrôleur de Gestion</td>
                                     <td>
-                                        <input type="radio" name="infosCG">
+                                        <input type="radio" name="infosCG" required>
                                         <label class="optionFormation" for="infosCG">VAE</label>
                                     </td>
                                     <td>
-                                        <input type="radio" name="infosCG">
+                                        <input type="radio" name="infosCG" required>
                                         <label class="optionFormation" for="infosCG">Part-time</label>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Responsable Management QHSE</td>
                                     <td>
-                                        <input type="radio" name="infosQHSE">
+                                        <input type="radio" name="infosQHSE" required>
                                         <label class="optionFormation" for="infosQHSE">VAE</label>
                                     </td>
                                     <td>
-                                        <input type="radio" name="infosQHSE">
+                                        <input type="radio" name="infosQHSE" required>
                                         <label class="optionFormation" for="infosQHSE">Part-time</label>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Manager en Ingénierie Informatique</td>
                                     <td>
-                                        <input type="radio" name="infosM2I">
+                                        <input type="radio" name="infosM2I" required>
                                         <label class="optionFormation" for="infosM2I">VAE</label>
                                     </td>
                                     <td>
-                                        <input type="radio" name="infosM2I">
+                                        <input type="radio" name="infosM2I" required>
                                         <label class="optionFormation" for="infosM2I">Part-time</label>
                                     </td>
                                 </tr>
@@ -410,7 +410,7 @@
                                     <td>Business Analyst</td>
                                     <td></td>
                                     <td>
-                                        <input type="radio" name="infosBA">
+                                        <input type="radio" name="infosBA" required>
                                         <label class="optionFormation" for="infosBA">Part-time</label>
                                     </td>
                                 </tr>
@@ -418,7 +418,7 @@
                                     <td>Manager de la sécurité des risques de l’information</td>
                                     <td></td>
                                     <td>
-                                        <input type="radio" name="infosMSI">
+                                        <input type="radio" name="infosMSI" required>
                                         <label class="optionFormation" for="infosMSI">Part-time</label>
                                     </td>
                                 </tr>
@@ -429,26 +429,26 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <input type="radio" name="userSituation">
+                                        <input type="radio" name="userSituation" required>
                                         <label class="optionFormation" for="userSituation">Salarié(e), de l’entreprise :</label>
                                     </td>
                                     <td><input type="text" name="userSituationAuther"></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="radio" name="userSituation">
+                                        <input type="radio" name="userSituation" required>
                                         <label class="optionFormation" for="userSituation">Demandeur d’emploi</label>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="radio" name="userSituation">
+                                        <input type="radio" name="userSituation" required>
                                         <label class="optionFormation" for="userSituation">Particulier</label>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="radio" name="userSituation">
+                                        <input type="radio" name="userSituation" required>
                                         <label class="optionFormation" for="userSituation">Autre : </label>
                                     </td>
                                     <td>
@@ -457,7 +457,9 @@
                                 </tr>
                             </tbody>
                         </table>
-
+                    </div>
+                    <div id="submitButton">
+                        <input type="submit" name="userSubmitFormulaire" id="submitButtonCheck">
                     </div>
                 </div>
             </form>
