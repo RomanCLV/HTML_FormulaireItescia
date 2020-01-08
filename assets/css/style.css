@@ -116,6 +116,7 @@ h3{
 	padding: 5px;
 	margin: 5px 0px;
 	transition-duration: 0.5s;
+	border-radius: 5px;
 }
 
 .formationType:hover{
@@ -191,6 +192,7 @@ h3{
 #contactContainerDiv{
 	background-color: rgba(84, 114, 174, 0.5);
 	border-left: rgb(84, 114, 174) solid 5px;
+	border-radius: 5px;
 }
 
 #infosContainer{
