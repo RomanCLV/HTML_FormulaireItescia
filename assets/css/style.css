@@ -311,3 +311,23 @@ footer div{
 #logotwitter{
     color:#DDDDDD;
 }
+
+#copyright a{
+    text-decoration : none;
+    color : white;
+}
+
+#poulpe{
+    background-color: rgb(206, 6, 43);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#poulpe figure{
+    display: block;
+    text-align: center;
+
+    flex-basis: 100%;
+}
