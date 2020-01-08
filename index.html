@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>¤ Formulaire Itescia ¤</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--<link rel="icon" href="Pictures/icon.png" type="image/x-icon">-->
         <meta name="author" content="Roman CLAVIER || Juan HERRADA || Erwan SPENETTE || Eddy MARQUAND">
         <meta name="description" content="Formulaire de suivi Itescia">
@@ -207,7 +208,7 @@
                 <div class="columnForm" id="secondColumn">
                     <div id="contactContainer">
                         <h2>Vos coordonnées :</h2>
-                        <div id="contactContainerDiv">
+                        <div class="typeContainer" id="contactContainerDiv">
                             <div class="inLine">
                                 <input type="radio" name="chooseSexe" value="sexeM">
                                 <label class="sexe" for="chooseSexe">Mr.</label>
@@ -282,85 +283,90 @@
                                 </tbody>
                             </table>
                         </div>
-                        
-                            </div>
+                    </div>
     
                     <div id="studyContainer">
                         <h2>Votre scolarité :</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Niveau de formation actuel :</td>
-                                    <td><input type="text" name="currentStudy"></td>
-                                </tr>
-                                <tr>
-                                    <td>Etablissement actuel (nom et ville) :</td>
-                                    <td><input type="text" name="currentSchool"></td>
-                                </tr>
-                                <tr>
-                                    <td>Dernier diplôme obtenu :</td>
-                                    <td><input type="text" name="lastDiploma"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="typeContainer" id="studyContainerDiv">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Niveau de formation actuel :</td>
+                                        <td><input type="text" name="currentStudy"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Etablissement actuel (nom et ville) :</td>
+                                        <td><input type="text" name="currentSchool"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dernier diplôme obtenu :</td>
+                                        <td><input type="text" name="lastDiploma"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
     
                     <div id="autherWishesContainer">
                         <h2>Vos autres souhaits de formation  à ITESCIA :</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>N°2 :</td>
-                                    <td><input type="text" name="secondWhish"></td>
-                                </tr>
-                                <tr>
-                                    <td>Niveau d'entrée :</td>
-                                    <td>
-                                        <select name="secondWishLevel">
-                                            <option value="">--Please choose an option--</option>
-                                            <option value="L1">L1</option>
-                                            <option value="L2">L2</option>
-                                            <option value="L3">L3</option>
-                                            <option value="M1">M1</option>
-                                            <option value="M2">M2</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>N°3 :</td>
-                                    <td><input type="text" name="thirdWhish"></td>
-                                </tr>
-                                <tr>
-                                    <td>Niveau d'entrée :</td>
-                                    <td>
-                                        <select name="secondWishLevel">
-                                            <option value="">--Please choose an option--</option>
-                                            <option value="L1">L1</option>
-                                            <option value="L2">L2</option>
-                                            <option value="L3">L3</option>
-                                            <option value="M1">M1</option>
-                                            <option value="M2">M2</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="typeContainer" id="autherWishesContainerDiv">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>N°2 :</td>
+                                        <td><input type="text" name="secondWhish"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Niveau d'entrée :</td>
+                                        <td>
+                                            <select name="secondWishLevel">
+                                                <option value="">--Please choose an option--</option>
+                                                <option value="L1">L1</option>
+                                                <option value="L2">L2</option>
+                                                <option value="L3">L3</option>
+                                                <option value="M1">M1</option>
+                                                <option value="M2">M2</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>N°3 :</td>
+                                        <td><input type="text" name="thirdWhish"></td>
+                                    </tr>
+                                    <tr>
+                                            <td>Niveau d'entrée :</td>
+                                        <td>
+                                            <select name="secondWishLevel">
+                                                <option value="">--Please choose an option--</option>
+                                                <option value="L1">L1</option>
+                                                <option value="L2">L2</option>
+                                                <option value="L3">L3</option>
+                                                <option value="M1">M1</option>
+                                                <option value="M2">M2</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
     
                     <div id="itescianHelperContainer">
                         <h2>Votre parrain à ITESCIA :</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Nom, Prénom :</td>
-                                    <td><input type="text" name="itescianHelperName"></td>
-                                </tr>
-                                <tr>
-                                    <td>Formation suivie :</td>
-                                    <td><input type="text" name="itescianHelperFormation"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="typeContainer" id="itescianHelperContainerDiv">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Nom, Prénom :</td>
+                                        <td><input type="text" name="itescianHelperName"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Formation suivie :</td>
+                                        <td><input type="text" name="itescianHelperFormation"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
                     <div id="infosContainer">
@@ -451,22 +457,36 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <p id="infos">
-                            ITESCIA, établissement de la CCI Paris-Ile-de-France collecte ces données afin de répondre 
-                            à votre demande et au-delà vous tenir informé des activités de nos services. 
-                            Vos données sont conservées tant que vous ne vous désinscrivez pas. 
-                            Vos données ne sont pas communiquées à des tiers, hormis au parrain que vous avez mentionné
-                            ci-dessus (point 3). Conformément à la loi du 6 janvier 1978, vous disposez d'un droit 
-                            d'accès aux données qui vous concernent auprès du Correspondant à la protection de données 
-                            cpdp@cci- paris-idf.fr. Vous disposez également d'un droit de modification ou de suppression 
-                            des mêmes données auprès de clil@itescia.fr et en cas de problème auprès de cpdp@cci-paris-idf.fr
-                        </p>
+
                     </div>
                 </div>
             </form>
         </section>
-
         <footer>
+            <div id="footerBandeGray">
+                <p id="infos">
+                    ITESCIA, établissement de la CCI Paris-Ile-de-France collecte ces données afin de répondre
+                    à votre demande et au-delà vous tenir informé des activités de nos services.
+                    Vos données sont conservées tant que vous ne vous désinscrivez pas.
+                    Vos données ne sont pas communiquées à des tiers, hormis au parrain que vous avez mentionné
+                    ci-dessus (point 3). Conformément à la loi du 6 janvier 1978, vous disposez d'un droit
+                    d'accès aux données qui vous concernent auprès du Correspondant à la protection de données
+                    cpdp@cci- paris-idf.fr. Vous disposez également d'un droit de modification ou de suppression
+                    des mêmes données auprès de clil@itescia.fr et en cas de problème auprès de cpdp@cci-paris-idf.fr
+                </p>
+            </div>
+            <div id="footerBandeRed">
+                <ul>
+                    <li><a href="https://www.facebook.com/itescia/" target="_blank"><i class="fa fa-facebook" id="logofb"></i></a></li>
+                    <li><a href="https://twitter.com/ITESCIA" target="_blank"><i class="fa fa-twitter" id="logotwitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/itescia_officiel/" target="_blank"><i class="fa fa-instagram" id="logoinsta"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCAhB6gZz4lFwtbXqhzkyVDg" target="_blank"><i class="fa fa-youtube" id="logoyt"></i></a></li>
+                    <li><a href="https://www.linkedin.com/school/itescia/" target="_blank"><i class="fa fa-linkedin" id="logolinkedin"></i></a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <p >© 2020 Copyright Kraken, Inc</p>
+            </div>
         </footer>
     </body>
 </html>
