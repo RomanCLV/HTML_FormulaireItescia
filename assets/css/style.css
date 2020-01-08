@@ -1,0 +1,210 @@
+body{
+	margin: 0px;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+}
+
+header .row {
+    display: flex;
+}
+header .row .col {
+    flex-basis: 40%;
+}
+header .row .col.large {
+    flex-basis: 100%;
+}
+header .row .col a {
+    display: block;
+}
+header .row .col a img {
+    width: 100%;
+}
+header .row .cci-coding a {
+    width: 250px;
+}
+header .row .cci-coding{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+	margin: 0px;
+	padding: 0 10%;
+	background-color: rgb(206, 6, 43);
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li a{
+	flex-grow: 1;
+	padding: 25px;
+	font-size: 1em;
+	font-family: "Calibri","Open Sans",sans-serif;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color: #000000;
+	background-color: #C8C8C8;
+}
+
+h1{
+	margin: 0px;
+	padding: 10px 10%;
+	flex-grow: 1;
+	text-align: center;
+	font-size: 3em;
+	font-weight: lighter;
+	font-family: "Calibri","Open Sans",sans-serif;
+}
+
+h2{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.5em;
+	color: rgb(206, 6, 43);
+}
+
+h3{
+	font-family: "Calibri","Open Sans",sans-serif;
+	font-weight: lighter;
+	font-size: 0.75em;
+	color: rgb(206, 6, 43);
+}
+
+.mainContainer{
+	margin: 0 10%;
+}
+
+.flexForm{
+	display: flex;
+}
+
+.columnForm{
+	flex-basis: 50%;
+	padding: 0px 20px 0px 20px;
+}
+
+#formationContainer{
+	margin: 0px;
+}
+
+#secondColumn{
+	display: flex;
+	flex-direction: column;
+	border-left: solid rgb(206, 6, 43) 1px;
+}
+
+.formationType{
+	padding: 5px;
+	margin: 5px 0px;
+	transition-duration: 0.5s;
+}
+
+.formationType:hover{
+	margin: 5px 0px 5px 5px;
+	transition-duration: 0.5s;
+}
+
+#formationGestion{
+	background-color: rgba(233, 160, 67, 0.5);
+	border-left: solid rgb(233, 160, 67) 5px;
+}
+
+#formationManagement{
+	background-color: rgba(201, 208, 67, 0.5);
+	border-left: solid rgb(201, 208, 67) 5px;
+}
+
+#formationInformatique{
+	background-color: rgba(86, 190, 237, 0.5);
+	border-left: solid rgb(86, 190, 237) 5px;
+}
+
+.nameFormation{
+	color: #000000;
+	font-family: "Calibri","Open Sans",sans-serif;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.optionFormation{
+	color: #000000;
+	font-family: "Calibri","Open Sans",sans-serif;
+	font-weight: normal;
+	font-size: 0.75em;
+}
+
+.optionFormationWithBold{
+	color: #000000;
+	font-family: "Calibri","Open Sans",sans-serif;
+	font-weight: bold;
+	font-size: 0.75em;
+}
+
+.nameFormation .optionFormation{
+	font-size: 0.9375em;
+	font-weight: normal;
+}
+
+.optionFormationWithBold .optionFormation{
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.tableOptions {
+	margin-left: 10px;
+}
+
+.optionsFormation{
+	margin-left: 20px;
+}
+
+#infos{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 0.7em;
+	text-align: justify;
+}
+
+.inLine{
+	display: inline;
+}
+
+
+#contactContainerDiv{
+	background-color: rgba(84, 114, 174, 0.5);
+	border-left: rgb(84, 114, 174) solid 5px;
+}
+
+#infosContainer{
+	margin-top: 20px;
+	padding: 10px;
+	background-color: rgb(200, 200, 200);
+	border-radius: 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"]{
+	border-radius: 5px;
+	padding: 2px;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="date"]:focus{
+	box-shadow: 0px 0px 10px rgb(86, 190, 237);
+}
