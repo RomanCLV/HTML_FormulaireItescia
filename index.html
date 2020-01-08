@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>¤ Formulaire Itescia ¤</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!--<link rel="icon" href="Pictures/icon.png" type="image/x-icon">-->
+        <meta name="author" content="Roman CLAVIER || Juan HERRADA || Erwan SPENETTE || Eddy MARQUAND">
+        <meta name="description" content="Formulaire de suivi Itescia">
+        <meta name="keywords" content="Itescia, Formulaire">
+    </head>
+    <body>
+        <!-- Title and Menu -->
+        <header>
+            <div class="row">
+                <div class="col large">
+                    <div id="logoItescia">
+                        <a href="https://www.itescia.fr" title="lienItescia" target="_blank">
+                            <img src="assets/images/itescia.jpg" name="logoItescia">
+                        </a>
+                    </div>
+                </div>
+                <div class="col cci-coding">
+                    <div id="cci">
+                        <a href="http://www.cci-paris-idf.fr/" title="lienItescia" target="_blank">
+                            <img src="assets/images/cci-paris.png" name="cci">
+                        </a>
+                    </div>
+                    <div id="coding">
+                        <a href="https://codingfactory.fr/" title="lienItescia" target="_blank">
+                            <img src="assets/images/codingFactory.png" name="coding">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="https://www.itescia.fr" title="lien vers itescia" target="_blank">ITESCIA</a></li>
+                </ul>
+            </nav>
+			<h1>Restons en contact !</h1>
+        </header>
+
+        <section class="mainContainer">
+            <form class="flexForm">
+                <div class="columnForm" id="formationContainer">
+                    <h2>Votre 1er choix de formation à ITESCIA :</h2>
+                    <div class="formationType" id="formationGestion">
+                        <h3>BAC +2 :</h3>
+                        <div>
+                            <input type="radio" name="chooseFormation" value="BTSCG">
+                            <label class="nameFormation" for="chooseFormation">BTS CG</label>
+                        </div>
+
+                        <h3>BAC +3 :</h3>
+                        <div>
+                            <p class="nameFormation">DCG</p>
+                            <input type="radio" name="chooseFormation" value="DCG_L1">
+                            <label class="optionFormation" for="chooseFormation">Entrée en L1</label>
+                            <input type="radio" name="chooseFormation" value="DCG_L2">
+                            <label class="optionFormation" for="chooseFormation">Entrée en L2</label>
+                        </div>
+
+                        <h3>BAC +4 :</h3>
+                        <div>
+                            <p class="nameFormation">Contrôleur de Gestion :</p>
+                            <input type="radio" name="chooseFormation" value="CG_L3">
+                            <label class="optionFormation" for="chooseFormation">Entrée en L3</label>
+                            <input type="radio" name="chooseFormation" value="CG_M1">
+                            <label class="optionFormation" for="chooseFormation">Entrée en M1</label>
+                        </div>
+                        <h3>BAC +5 :</h3>
+                        <div>
+                            <input type="radio" name="chooseFormation" value="DSCG">
+                            <label class="nameFormation" for="chooseFormation">DSCG<span class="optionFormation"> (entrée en M1)</span></label>
+                        </div>
+                    </div>
+
+                    <div class="formationType" id="formationManagement">
+                        <h3>BAC +4 :</h3>
+                        <div>
+                            <p class="nameFormation">Responsable de systèmes de management QHSE</p>
+                            <input type="radio" name="chooseFormation" value="QHSE_L3">
+                            <label class="optionFormation" for="chooseFormation">Entrée en L3</label>
+                            <input type="radio" name="chooseFormation" value="QHSE_M1">
+                            <label class="optionFormation" for="chooseFormation">Entrée en M1</label>
+
+                            <p class="nameFormation">Responsable Ressources Humaines</p>
+                            <input type="radio" name="chooseFormation" value="RH_L3">
+                            <label class="optionFormation" for="chooseFormation">Entrée en L3</label>
+                            <input type="radio" name="chooseFormation" value="RH_M1">
+                            <label class="optionFormation" for="chooseFormation">Entrée en M1</label>
+                        </div>
+
+                        <h3>BAC +5 :</h3>
+                        <div>
+                            <input type="radio" name="chooseFormation" value="MQPI">
+                            <label class="nameFormation" for="chooseFormation">Manager Qualité et Processus Intelligents<span class="optionFormation"> (entrée en M2)</span></label>
+                        </div>
+                    </div>
+
+                    <div class="formationType" id="formationInformatique">
+                        <h3>BAC +2 :</h3>
+                        <div>    
+                            <input type="radio" name="chooseFormation" value="BTSSIO">
+                            <label class="nameFormation" for="chooseFormation">BTS SIO, option SISR ou SLAM</label>
+                        </div>
+                        <div>
+                            <p class="nameFormation">Codeur informatique :</p>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="optionFormationWithBold">En 2 ans alternance</td>
+                                        <td>
+                                            <input type="radio" name="chooseLocation" value="CI_2Y_CRG">
+                                            <label class="optionFormation" for="chooseLocation">à Cergy</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="chooseLocation" value="CI_2Y_PRS">
+                                            <label class="optionFormation" for="chooseLocation">à Paris</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="optionFormationWithBold">En 1 an en temps plein <span class="optionFormation">(payant)</span></td>
+                                        <td>
+                                            <input type="radio" name="chooseLocation" value="CI_1Y_PRS">
+                                            <label class="optionFormation" for="chooseLocation">à Cergy</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="chooseLocation" value="CI_1Y_PRS">
+                                            <label class="optionFormation" for="chooseLocation">à Paris</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h3>BAC +3 (en 1 an) :</h3>
+                        <div>    
+                            <input type="radio" name="chooseFormation" value="LIG">
+                            <label class="nameFormation" for="chooseFormation">Licence d'informatique générale</label>
+                        </div>
+                        <div>
+                            <p class="nameFormation">Concepteur développeur de solution mobiles et connectées :</p>
+                            <table class="tableOptions">
+                                <tbody>
+                                    <tr>
+                                        <td class="optionFormationWithBold">En alternance</td>
+                                        <td>
+                                            <input type="radio" name="chooseLocation" value="SMC_CRG">
+                                            <label class="optionFormation" for="chooseLocation">à Cergy</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="optionFormationWithBold">En temps plein <span class="optionFormation">(payant)</span></td>
+                                        <td>
+                                            <input type="radio" name="chooseLocation" value="SMC_PRS">
+                                            <label class="optionFormation" for="chooseLocation">à Paris</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>BAC +5 :</h3>
+                        <div>
+                            <p class="nameFormation">Manager en Ingénierie Informatique</p>
+                            <input type="radio" name="chooseFormation" value="M2I_L3">
+                            <label class="optionFormation" for="chooseFormation">Entrée en L3</label>
+                            <p class="optionFormation">Entrée en M1, spécialisation :</p>
+                            <div class="optionsFormation">
+                                <input type="radio" name="chooseFormation" value="M2I_M1_CYB">
+                                <label class="optionFormationWithBold" for="chooseFormation">MSc Cybersécurité</label><br />
+                                <input type="radio" name="chooseFormation" value="M2I_M1_RS">
+                                <label class="optionFormationWithBold" for="chooseFormation">MSc Réseaux & Systèmes</label><br />
+                                <input type="radio" name="chooseFormation" value="M2I_M1_BC">
+                                <label class="optionFormationWithBold" for="chooseFormation">MSc Big data & Cloud</label><br />
+                                <input type="radio" name="chooseFormation" value="M2I_M1_GST">
+                                <label class="optionFormationWithBold" for="chooseFormation">MSc Gaming & Smart Tech</label><br />
+                                <input type="radio" name="chooseFormation" value="M2I_M1_MSI">
+                                <label class="optionFormationWithBold" for="chooseFormation">MSc Management des SI & Digitalisation</label><br />
+                                <input type="radio" name="chooseFormation" value="M2I_M1_ILS">
+                                <label class="optionFormationWithBold" for="chooseFormation">Ingénierie Logiciels et Systèmes</label><br />
+                                <input type="radio" name="chooseFormation" value="M2I_M1_I2A">
+                                <label class="optionFormationWithBold" for="chooseFormation">Intelligence Artificielle et Applications</label>
+                            </div>
+                            <p class="optionFormation">Entrée en M2, spécialisation :</p>
+                            <div class="optionsFormation">
+                                <input type="radio" name="chooseFormation" value="M2I_M2_EIT">
+                                <label class="optionFormationWithBold" for="chooseFormation">MSc Entrepreneuriat & IT</label><br />
+                                <input type="radio" name="chooseFormation" value="M2I_M2_IBIT">
+                                <label class="optionFormationWithBold" for="chooseFormation">MSc International Business for IT</label>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="nameFormation">Business Analyste <span class="optionFormation">(M1 + M2)</span></p>
+                            <input type="radio" name="chooseFormation" value="BA_PSI">
+                            <label class="optionFormation" for="chooseFormation">Performance et systèmes d’information</label>
+                            <br />
+                            <input type="radio" name="chooseFormation" value="BA_RH">
+                            <label class="optionFormation" for="chooseFormation">Digitisation RH</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="columnForm" id="secondColumn">
+                    <div id="contactContainer">
+                        <h2>Vos coordonnées :</h2>
+                        <div id="contactContainerDiv">
+                            <div class="inLine">
+                                <input type="radio" name="chooseSexe" value="sexeM">
+                                <label class="sexe" for="chooseSexe">Mr.</label>
+                                <input type="radio" name="chooseSexe" value="sexeF">
+                                <label class="sexe" for="chooseSexe" >Mme.</label>
+                                <input type="radio" name="chooseSexe" value="sexeB">
+                                <label class="sexe" for="chooseSexe">Non Binaire</label>
+                            </div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Nom :</td>
+                                        <td><input type="text" name="userName"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prénom :</td>
+                                        <td><input type="text" name="userFirstName"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Adresse :</td>
+                                        <td><input type="text" name="userAdresse"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>CP :</td>
+                                                        <td><input type="text" name="userCp"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Ville :</td>
+                                                        <td><input type="text" name="userCity"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tél. fixe :</td>
+                                        <td><input type="tel" name="userPhoneFixe"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Portable :</td>
+                                        <td><input type="tel" name="userPhone"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-Mail :</td>
+                                        <td><input type="email" name="userEmail"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date de naissance :</td>
+                                        <td><input type="date" name="userBirthday"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nationalité :</td>
+                                        <td>
+                                            <input type="radio" name="chooseNationality" value="Fr">
+                                            <label for="chooseNationality">Française</label>
+                                            <input type="radio" name="chooseNationality" value="Ue">
+                                            <label for="chooseNationality">UE</label>
+                                            <input type="radio" name="chooseNationality" value="HUe">
+                                            <label for="chooseNationality">Hors UE</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                            </div>
+    
+                    <div id="studyContainer">
+                        <h2>Votre scolarité :</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Niveau de formation actuel :</td>
+                                    <td><input type="text" name="currentStudy"></td>
+                                </tr>
+                                <tr>
+                                    <td>Etablissement actuel (nom et ville) :</td>
+                                    <td><input type="text" name="currentSchool"></td>
+                                </tr>
+                                <tr>
+                                    <td>Dernier diplôme obtenu :</td>
+                                    <td><input type="text" name="lastDiploma"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <div id="autherWishesContainer">
+                        <h2>Vos autres souhaits de formation  à ITESCIA :</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>N°2 :</td>
+                                    <td><input type="text" name="secondWhish"></td>
+                                </tr>
+                                <tr>
+                                    <td>Niveau d'entrée :</td>
+                                    <td>
+                                        <select name="secondWishLevel">
+                                            <option value="">--Please choose an option--</option>
+                                            <option value="L1">L1</option>
+                                            <option value="L2">L2</option>
+                                            <option value="L3">L3</option>
+                                            <option value="M1">M1</option>
+                                            <option value="M2">M2</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N°3 :</td>
+                                    <td><input type="text" name="thirdWhish"></td>
+                                </tr>
+                                <tr>
+                                    <td>Niveau d'entrée :</td>
+                                    <td>
+                                        <select name="secondWishLevel">
+                                            <option value="">--Please choose an option--</option>
+                                            <option value="L1">L1</option>
+                                            <option value="L2">L2</option>
+                                            <option value="L3">L3</option>
+                                            <option value="M1">M1</option>
+                                            <option value="M2">M2</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <div id="itescianHelperContainer">
+                        <h2>Votre parrain à ITESCIA :</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Nom, Prénom :</td>
+                                    <td><input type="text" name="itescianHelperName"></td>
+                                </tr>
+                                <tr>
+                                    <td>Formation suivie :</td>
+                                    <td><input type="text" name="itescianHelperFormation"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="infosContainer">
+                        <h3>FORMATION CONTINUE</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Contrôleur de Gestion</td>
+                                    <td>
+                                        <input type="radio" name="infosCG">
+                                        <label class="optionFormation" for="infosCG">VAE</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="infosCG">
+                                        <label class="optionFormation" for="infosCG">Part-time</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Responsable Management QHSE</td>
+                                    <td>
+                                        <input type="radio" name="infosQHSE">
+                                        <label class="optionFormation" for="infosQHSE">VAE</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="infosQHSE">
+                                        <label class="optionFormation" for="infosQHSE">Part-time</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Manager en Ingénierie Informatique</td>
+                                    <td>
+                                        <input type="radio" name="infosM2I">
+                                        <label class="optionFormation" for="infosM2I">VAE</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="infosM2I">
+                                        <label class="optionFormation" for="infosM2I">Part-time</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Business Analyst</td>
+                                    <td></td>
+                                    <td>
+                                        <input type="radio" name="infosBA">
+                                        <label class="optionFormation" for="infosBA">Part-time</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Manager de la sécurité des risques de l’information</td>
+                                    <td></td>
+                                    <td>
+                                        <input type="radio" name="infosMSI">
+                                        <label class="optionFormation" for="infosMSI">Part-time</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Votre situation :</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="userSituation">
+                                        <label class="optionFormation" for="userSituation">Salarié(e), de l’entreprise :</label>
+                                    </td>
+                                    <td><input type="text" name="userSituationAuther"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="userSituation">
+                                        <label class="optionFormation" for="userSituation">Demandeur d’emploi</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="userSituation">
+                                        <label class="optionFormation" for="userSituation">Particulier</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="userSituation">
+                                        <label class="optionFormation" for="userSituation">Autre : </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="userSituationAuther">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p id="infos">
+                            ITESCIA, établissement de la CCI Paris-Ile-de-France collecte ces données afin de répondre 
+                            à votre demande et au-delà vous tenir informé des activités de nos services. 
+                            Vos données sont conservées tant que vous ne vous désinscrivez pas. 
+                            Vos données ne sont pas communiquées à des tiers, hormis au parrain que vous avez mentionné
+                            ci-dessus (point 3). Conformément à la loi du 6 janvier 1978, vous disposez d'un droit 
+                            d'accès aux données qui vous concernent auprès du Correspondant à la protection de données 
+                            cpdp@cci- paris-idf.fr. Vous disposez également d'un droit de modification ou de suppression 
+                            des mêmes données auprès de clil@itescia.fr et en cas de problème auprès de cpdp@cci-paris-idf.fr
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+        </footer>
+    </body>
+</html>
