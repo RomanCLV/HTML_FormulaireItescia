@@ -95,6 +95,20 @@ h3{
 
 .flexForm{
 	display: flex;
+	flex-direction: row;
+}
+
+@media screen and (max-width: 1180px) {
+	.flexForm{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#secondColumn{
+		display: flex;
+		flex-direction: column;
+		border-left: solid rgb(206, 6, 43) 0px !important;
+	}
 }
 
 .columnForm{
@@ -270,7 +284,8 @@ footer div{
 
 #footerBandeRed{
     height: 60px;
-    padding: 20px 0px;
+	padding: 20px 0px;
+	margin: 50px 0 0 0;
     background-color: rgb(206, 6, 43);
 }
 
