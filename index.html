@@ -207,7 +207,7 @@
                 <div class="columnForm" id="secondColumn">
                     <div id="contactContainer">
                         <h2>Vos coordonnées :</h2>
-                        <div id="contactContainerDiv">
+                        <div class="typeContainer" id="contactContainerDiv">
                             <div class="inLine">
                                 <input type="radio" name="chooseSexe" value="sexeM">
                                 <label class="sexe" for="chooseSexe">Mr.</label>
@@ -281,86 +281,91 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                        
-                            </div>
+                        </div>                        
+                    </div>
     
                     <div id="studyContainer">
                         <h2>Votre scolarité :</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Niveau de formation actuel :</td>
-                                    <td><input type="text" name="currentStudy"></td>
-                                </tr>
-                                <tr>
-                                    <td>Etablissement actuel (nom et ville) :</td>
-                                    <td><input type="text" name="currentSchool"></td>
-                                </tr>
-                                <tr>
-                                    <td>Dernier diplôme obtenu :</td>
-                                    <td><input type="text" name="lastDiploma"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="typeContainer" id="studyContainerDiv">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Niveau de formation actuel :</td>
+                                        <td><input type="text" name="currentStudy"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Etablissement actuel (nom et ville) :</td>
+                                        <td><input type="text" name="currentSchool"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dernier diplôme obtenu :</td>
+                                        <td><input type="text" name="lastDiploma"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
     
                     <div id="autherWishesContainer">
                         <h2>Vos autres souhaits de formation  à ITESCIA :</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>N°2 :</td>
-                                    <td><input type="text" name="secondWhish"></td>
-                                </tr>
-                                <tr>
-                                    <td>Niveau d'entrée :</td>
-                                    <td>
-                                        <select name="secondWishLevel">
-                                            <option value="">--Please choose an option--</option>
-                                            <option value="L1">L1</option>
-                                            <option value="L2">L2</option>
-                                            <option value="L3">L3</option>
-                                            <option value="M1">M1</option>
-                                            <option value="M2">M2</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>N°3 :</td>
-                                    <td><input type="text" name="thirdWhish"></td>
-                                </tr>
-                                <tr>
-                                    <td>Niveau d'entrée :</td>
-                                    <td>
-                                        <select name="secondWishLevel">
-                                            <option value="">--Please choose an option--</option>
-                                            <option value="L1">L1</option>
-                                            <option value="L2">L2</option>
-                                            <option value="L3">L3</option>
-                                            <option value="M1">M1</option>
-                                            <option value="M2">M2</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="typeContainer" id="autherWishesContainerDiv">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>N°2 :</td>
+                                        <td><input type="text" name="secondWhish"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Niveau d'entrée :</td>
+                                        <td>
+                                            <select name="secondWishLevel">
+                                                <option value="">--Please choose an option--</option>
+                                                <option value="L1">L1</option>
+                                                <option value="L2">L2</option>
+                                                <option value="L3">L3</option>
+                                                <option value="M1">M1</option>
+                                                <option value="M2">M2</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>N°3 :</td>
+                                        <td><input type="text" name="thirdWhish"></td>
+                                    </tr>
+                                    <tr>
+                                            <td>Niveau d'entrée :</td>
+                                        <td>
+                                            <select name="secondWishLevel">
+                                                <option value="">--Please choose an option--</option>
+                                                <option value="L1">L1</option>
+                                                <option value="L2">L2</option>
+                                                <option value="L3">L3</option>
+                                                <option value="M1">M1</option>
+                                                <option value="M2">M2</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
     
                     <div id="itescianHelperContainer">
                         <h2>Votre parrain à ITESCIA :</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Nom, Prénom :</td>
-                                    <td><input type="text" name="itescianHelperName"></td>
-                                </tr>
-                                <tr>
-                                    <td>Formation suivie :</td>
-                                    <td><input type="text" name="itescianHelperFormation"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="typeContainer" id="itescianHelperContainerDiv">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Nom, Prénom :</td>
+                                        <td><input type="text" name="itescianHelperName"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Formation suivie :</td>
+                                        <td><input type="text" name="itescianHelperFormation"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
                     <div id="infosContainer">

@@ -187,6 +187,32 @@ h3{
 	display: inline;
 }
 
+.typeContainer{
+	padding: 10px;
+	margin: 5px 0;
+	transition-duration: 0.5s;
+}
+
+.typeContainer:hover{
+	padding: 10px;
+	margin: 5px 0 5px 5px;
+	transition-duration: 0.5s;
+}
+
+#studyContainerDiv{
+	background-color: rgba(84, 114, 174, 0.5);
+	border-left: rgb(84, 114, 174) solid 5px;
+}
+
+#autherWishesContainerDiv{
+	background-color: rgba(84, 114, 174, 0.5);
+	border-left: rgb(84, 114, 174) solid 5px;
+}
+
+#itescianHelperContainerDiv{
+	background-color: rgba(84, 114, 174, 0.5);
+	border-left: rgb(84, 114, 174) solid 5px;
+}
 
 #contactContainerDiv{
 	background-color: rgba(84, 114, 174, 0.5);
