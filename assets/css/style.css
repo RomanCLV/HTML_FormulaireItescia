@@ -345,20 +345,23 @@ footer div{
     flex-basis: 100%;
     align-items: center;
     padding-top: 10%;
-    background-color: pink;
-    transition : 0s;
 }
 
-#submitButton : hover{
-    background-color : yellow;
-}
-
-#submitButtonCheck{
-    color: black;
-    background-color: rgba(86, 190, 237,0.5);
+input[type="submit"]{
     font-size: 20px;
+    border-radius: 100px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(206, 6, 43);
+    color: white;
+    transition-duration : 0.5s
+
 }
 
-input [type: submit]: hover{
-    color: white;
+input[type="submit"]:hover{
+    box-shadow: -5px -5px 5px black;
+    color: rgb(206, 6, 43);
+    background-color: white;
+    transition-duration : 0.5s
 }
