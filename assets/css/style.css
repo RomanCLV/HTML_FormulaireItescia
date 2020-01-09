@@ -346,17 +346,19 @@ footer div{
 
 #submitButton{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-basis: 100%;
-    align-items: center;
+	align-items: center;
+	justify-content: center;
     padding-top: 10%;
 }
 
-input[type="submit"]{
+button[type="submit"], button[type="reset"]{
 	border: none;
     font-size: 20px;
     border-radius: 100px;
-    padding: 10px;
+	padding: 10px;
+	margin: 10px;
     width: 200px;
     box-shadow: 5px 5px 15px black;
     background-color: rgb(206, 6, 43);
@@ -364,7 +366,7 @@ input[type="submit"]{
     transition-duration : 0.5s
 }
 
-input[type="submit"]:hover{
+button[type="submit"]:hover, button[type="reset"]:hover{
     box-shadow: 5px 5px 5px black;
     color: rgb(206, 6, 43);
     background-color: white;
