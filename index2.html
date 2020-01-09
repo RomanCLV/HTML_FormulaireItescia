@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>¤ Formulaire Itescia ¤</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="assets/images/itescia.ico" type="image/x-icon">
+        <meta name="author" content="Roman CLAVIER || Juan HERRADA || Erwan SPENETTE || Eddy MARQUAND">
+        <meta name="description" content="Formulaire de suivi Itescia">
+        <meta name="keywords" content="Itescia, Formulaire">
+    </head>
+    <body>
+        <!-- Title and Menu -->
+        <header>
+            <div class="carrousel">
+                <div class="mySlides">
+                    <a href="https://www.itescia.fr" title="lien Itescia" target="_blank">
+                        <img src="assets/images/itescia.jpg" name="logo Itescia" alt="logo_ITESCIA">
+                    </a>
+                  </div>
+                  <div class="mySlides">
+                    <a href="http://www.cci-paris-idf.fr/" title="lien cci" target="_blank">
+                        <img src="assets/images/cci-paris.png" name="logo cci" alt="logo_CCI">
+                    </a>
+                  </div>
+                  <div class="mySlides">
+                    <a href="https://codingfactory.fr/" title="lien coding" target="_blank">
+                        <img src="assets/images/codingFactory.png" name="logo coding" alt="logo_CodingFactory">
+                    </a>
+                  </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="https://www.itescia.fr" title="lien vers itescia" target="_blank">ITESCIA</a></li>
+                </ul>
+            </nav>
+			<h1>Restons en contact !</h1>
+        </header>
+    </body>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("carrousel");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        } 
+    </script>
+</html>
