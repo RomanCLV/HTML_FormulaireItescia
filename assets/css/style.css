@@ -344,7 +344,7 @@ footer div{
     flex-basis: 100%;
 }
 
-#submitButton{
+.submitResetButton{
     display: flex;
     flex-direction: row;
     flex-basis: 100%;
