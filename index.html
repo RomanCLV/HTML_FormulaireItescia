@@ -5,7 +5,7 @@
         <title>¤ Formulaire Itescia ¤</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--<link rel="icon" href="Pictures/icon.png" type="image/x-icon">-->
+        <link rel="icon" href="assets/images/itescia.ico" type="image/x-icon">
         <meta name="author" content="Roman CLAVIER || Juan HERRADA || Erwan SPENETTE || Eddy MARQUAND">
         <meta name="description" content="Formulaire de suivi Itescia">
         <meta name="keywords" content="Itescia, Formulaire">
@@ -17,19 +17,19 @@
                 <div class="col large">
                     <div id="logoItescia">
                         <a href="https://www.itescia.fr" title="lienItescia" target="_blank">
-                            <img src="assets/images/itescia.jpg" name="logoItescia">
+                            <img src="assets/images/itescia.jpg" name="logoItescia" alt="logo_ITESCIA">
                         </a>
                     </div>
                 </div>
                 <div class="col cci-coding">
                     <div id="cci">
                         <a href="http://www.cci-paris-idf.fr/" title="lienItescia" target="_blank">
-                            <img src="assets/images/cci-paris.png" name="cci">
+                            <img src="assets/images/cci-paris.png" name="cci" alt="logo_CCI">
                         </a>
                     </div>
                     <div id="coding">
                         <a href="https://codingfactory.fr/" title="lienItescia" target="_blank">
-                            <img src="assets/images/codingFactory.png" name="coding">
+                            <img src="assets/images/codingFactory.png" name="coding" alt="logo_CodingFactory">
                         </a>
                     </div>
                 </div>
@@ -221,15 +221,15 @@
                                 <tbody>
                                     <tr>
                                         <td>Nom :</td>
-                                        <td><input type="text" name="userName"></td>
+                                        <td><input type="text" name="userName" required></td>
                                     </tr>
                                     <tr>
                                         <td>Prénom :</td>
-                                        <td><input type="text" name="userFirstName"></td>
+                                        <td><input type="text" name="userFirstName" required></td>
                                     </tr>
                                     <tr>
                                         <td>Adresse :</td>
-                                        <td><input type="text" name="userAdresse"></td>
+                                        <td><input type="text" name="userAdresse" required></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -237,7 +237,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>CP :</td>
-                                                        <td><input type="text" name="userCp"></td>
+                                                        <td><input type="text" name="userCp" required></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -247,7 +247,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>Ville :</td>
-                                                        <td><input type="text" name="userCity"></td>
+                                                        <td><input type="text" name="userCity" required></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -255,52 +255,52 @@
                                     </tr>
                                     <tr>
                                         <td>Tél. fixe :</td>
-                                        <td><input type="tel" name="userPhoneFixe"></td>
+                                        <td><input type="tel" name="userPhoneFixe" required></td>
                                     </tr>
                                     <tr>
                                         <td>Portable :</td>
-                                        <td><input type="tel" name="userPhone"></td>
+                                        <td><input type="tel" name="userPhone" required></td>
                                     </tr>
                                     <tr>
                                         <td>E-Mail :</td>
-                                        <td><input type="email" name="userEmail"></td>
+                                        <td><input type="email" name="userEmail" required></td>
                                     </tr>
                                     <tr>
                                         <td>Date de naissance :</td>
-                                        <td><input type="date" name="userBirthday"></td>
+                                        <td><input type="date" name="userBirthday" required></td>
                                     </tr>
                                     <tr>
                                         <td>Nationalité :</td>
                                         <td>
-                                            <input type="radio" name="chooseNationality" value="Fr">
+                                            <input type="radio" name="chooseNationality" value="Fr" required>
                                             <label for="chooseNationality">Française</label>
-                                            <input type="radio" name="chooseNationality" value="Ue">
+                                            <input type="radio" name="chooseNationality" value="Ue" required>
                                             <label for="chooseNationality">UE</label>
-                                            <input type="radio" name="chooseNationality" value="HUe">
+                                            <input type="radio" name="chooseNationality" value="HUe" required>
                                             <label for="chooseNationality">Hors UE</label>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>                        
+                        </div>
                     </div>
     
                     <div id="studyContainer">
                         <h2>Votre scolarité :</h2>
-                        <div class="typeContainer" id="studyContainerDiv">
+                        <div class="typeContainer" id="studyContainerDiv" >
                             <table>
                                 <tbody>
                                     <tr>
                                         <td>Niveau de formation actuel :</td>
-                                        <td><input type="text" name="currentStudy"></td>
+                                        <td><input type="text" name="currentStudy" required></td>
                                     </tr>
                                     <tr>
                                         <td>Etablissement actuel (nom et ville) :</td>
-                                        <td><input type="text" name="currentSchool"></td>
+                                        <td><input type="text" name="currentSchool" required></td>
                                     </tr>
                                     <tr>
                                         <td>Dernier diplôme obtenu :</td>
-                                        <td><input type="text" name="lastDiploma"></td>
+                                        <td><input type="text" name="lastDiploma" required></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -314,12 +314,12 @@
                                 <tbody>
                                     <tr>
                                         <td>N°2 :</td>
-                                        <td><input type="text" name="secondWhish"></td>
+                                        <td><input type="text" name="secondWhish" required></td>
                                     </tr>
                                     <tr>
                                         <td>Niveau d'entrée :</td>
                                         <td>
-                                            <select name="secondWishLevel">
+                                            <select name="secondWishLevel" required>
                                                 <option value="">--Please choose an option--</option>
                                                 <option value="L1">L1</option>
                                                 <option value="L2">L2</option>
@@ -331,12 +331,12 @@
                                     </tr>
                                     <tr>
                                         <td>N°3 :</td>
-                                        <td><input type="text" name="thirdWhish"></td>
+                                        <td><input type="text" name="thirdWhish" required></td>
                                     </tr>
                                     <tr>
                                             <td>Niveau d'entrée :</td>
                                         <td>
-                                            <select name="secondWishLevel">
+                                            <select name="secondWishLevel" required>
                                                 <option value="">--Please choose an option--</option>
                                                 <option value="L1">L1</option>
                                                 <option value="L2">L2</option>
@@ -457,24 +457,14 @@
                                 </tr>
                             </tbody>
                         </table>
-                        
+                    </div>
+                    <div id="submitButton">
+                        <input type="submit">
                     </div>
                 </div>
             </form>
         </section>
         <footer>
-            <div id="footerBandeGray">
-                <p id="infos">
-                    ITESCIA, établissement de la CCI Paris-Ile-de-France collecte ces données afin de répondre 
-                    à votre demande et au-delà vous tenir informé des activités de nos services. 
-                    Vos données sont conservées tant que vous ne vous désinscrivez pas. 
-                    Vos données ne sont pas communiquées à des tiers, hormis au parrain que vous avez mentionné
-                    ci-dessus (point 3). Conformément à la loi du 6 janvier 1978, vous disposez d'un droit 
-                    d'accès aux données qui vous concernent auprès du Correspondant à la protection de données 
-                    cpdp@cci- paris-idf.fr. Vous disposez également d'un droit de modification ou de suppression 
-                    des mêmes données auprès de clil@itescia.fr et en cas de problème auprès de cpdp@cci-paris-idf.fr
-                </p>
-            </div>
             <div id="footerBandeRed">
                 <ul>
                     <li><a href="https://www.facebook.com/itescia/" target="_blank"><i class="fa fa-facebook" id="logofb"></i></a></li>
@@ -485,7 +475,7 @@
                 </ul>
             </div>
             <div id="copyright">
-                <p >© 2020 Copyright Kraken, Inc</p>
+                <p>© 2020 Copyright | <a href="https://codingfactory.fr/" target="_blank">Developped by CodingFacorty</a> | <a href="poulpe.html" target="_blank">Kraken</a>, Inc | <a href="mentionsLegals.html">Mentions Légales</a></p>
             </div>
         </footer>
     </body>
