@@ -235,7 +235,8 @@ h3{
 #infosContainer{
 	margin-top: 20px;
 	padding: 10px;
-	background-color: rgb(200, 200, 200);
+	background-color: rgba(200, 200, 200, 0.5);
+	border-left: rgb(200, 200, 200) solid 5px;
 	border-radius: 5px;
 	font-family: "Calibri","Open Sans",sans-serif;
 	font-size: 1em;
@@ -265,17 +266,21 @@ footer div{
 }
 
 #infos{
-	padding: 3px;
+	margin: 10%;
+	padding: 10px;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 0.7em;
 	text-align: justify;
 	color: rgb(206, 6, 43);
+	background-color: rgb(200, 200, 200);
+	border-radius: 5px;
 }
 
 #copyright{
 	text-align: center;
 	color: white;
-	background-color: rgb(160, 18, 8);
+	background-color: rgb(206, 6, 43);
+	padding: 5px;
 }
 
 #footerBandeGray p, #copyright p{
@@ -348,20 +353,21 @@ footer div{
 }
 
 input[type="submit"]{
+	border: none;
     font-size: 20px;
     border-radius: 100px;
     padding: 10px;
     width: 200px;
+    box-shadow: 5px 5px 15px black;
+    background-color: rgb(206, 6, 43);
+    color: white;
+    transition-duration : 0.5s
+}
+
+input[type="submit"]:hover{
     box-shadow: 5px 5px 5px black;
     background-color: rgb(206, 6, 43);
     color: white;
     transition-duration : 0.5s
 
-}
-
-input[type="submit"]:hover{
-    box-shadow: -5px -5px 5px black;
-    color: rgb(206, 6, 43);
-    background-color: white;
-    transition-duration : 0.5s
 }
