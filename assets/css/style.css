@@ -67,7 +67,11 @@ nav ul li a:hover{
 }
 
 h1{
+<<<<<<< HEAD
 	margin: 0px;
+=======
+	margin: 50px 0px;
+>>>>>>> dev
 	padding: 10px 10%;
 	flex-grow: 1;
 	text-align: center;
@@ -192,12 +196,15 @@ h3{
 	margin-left: 20px;
 }
 
+<<<<<<< HEAD
 #infos{
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 0.7em;
 	text-align: justify;
 }
 
+=======
+>>>>>>> dev
 .inLine{
 	display: inline;
 }
@@ -235,7 +242,10 @@ h3{
 #contactContainerDiv{
 	background-color: rgba(84, 114, 174, 0.5);
 	border-left: rgb(84, 114, 174) solid 5px;
+<<<<<<< HEAD
 	border-radius: 5px;
+=======
+>>>>>>> dev
 }
 
 #infosContainer{
@@ -291,7 +301,12 @@ footer div{
 
 #footerBandeRed{
     height: 60px;
+<<<<<<< HEAD
     padding: 20px 0px;
+=======
+	padding: 20px 0px;
+	margin: 50px 0 0 0;
+>>>>>>> dev
     background-color: rgb(206, 6, 43);
 }
 
@@ -325,6 +340,7 @@ footer div{
 #logotwitter{
     color:#DDDDDD;
 }
+<<<<<<< HEAD
 
 #copyright a{
     text-decoration : none;
@@ -367,3 +383,5 @@ footer div{
 input [type: submit]: hover{
     color: white;
 }
+=======
+>>>>>>> dev
