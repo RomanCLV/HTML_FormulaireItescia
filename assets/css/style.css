@@ -7,27 +7,20 @@ header{
 	flex-direction: column;
 }
 
-header .row {
-    display: flex;
+.carrousel{
+	max-width: 1000px;
+	height:200px;
+    position: relative;
+	margin: auto;
 }
-header .row .col {
-    flex-basis: 40%;
+
+.mySlides{
+    display: none;
 }
-header .row .col.large {
-    flex-basis: 100%;
-}
-header .row .col a {
-    display: block;
-}
-header .row .col a img {
-    width: 100%;
-}
-header .row .cci-coding a {
-    width: 250px;
-}
-header .row .cci-coding{
-    display: flex;
-    flex-direction: column;
+
+.mySlides a img{
+	max-height: 200px;
+	width: auto;
 }
 
 nav{

@@ -5,34 +5,30 @@
         <title>¤ Formulaire Itescia ¤</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="script" href="script.js"/>-->
         <link rel="icon" href="assets/images/itescia.ico" type="image/x-icon">
         <meta name="author" content="Roman CLAVIER || Juan HERRADA || Erwan SPENETTE || Eddy MARQUAND">
         <meta name="description" content="Formulaire de suivi Itescia">
         <meta name="keywords" content="Itescia, Formulaire">
     </head>
     <body>
-        <!-- Title and Menu -->
         <header>
-            <div class="row">
-                <div class="col large">
-                    <div id="logoItescia">
-                        <a href="https://www.itescia.fr" title="lien Itescia" target="_blank">
-                            <img src="assets/images/itescia.jpg" name="logoItescia" alt="logo_ITESCIA">
-                        </a>
-                    </div>
-                </div>
-                <div class="col cci-coding">
-                    <div id="cci">
-                        <a href="http://www.cci-paris-idf.fr/" title="lien cci" target="_blank">
-                            <img src="assets/images/cci-paris.png" name="cci" alt="logo_CCI">
-                        </a>
-                    </div>
-                    <div id="coding">
-                        <a href="https://codingfactory.fr/" title="lien coding" target="_blank">
-                            <img src="assets/images/codingFactory.png" name="coding" alt="logo_CodingFactory">
-                        </a>
-                    </div>
-                </div>
+            <div class="carrousel">
+                <div class="mySlides">
+                    <a href="https://www.itescia.fr" title="lien Itescia" target="_blank">
+                        <img src="assets/images/itescia.jpg" name="logo Itescia" alt="logo_ITESCIA">
+                    </a>
+                  </div>
+                  <div class="mySlides">
+                    <a href="https://codingfactory.fr/" title="lien coding" target="_blank">
+                        <img src="assets/images/codingFactory.png" name="logo coding" alt="logo_CodingFactory">
+                    </a>
+                  </div>
+                  <div class="mySlides">
+                    <a href="http://www.cci-paris-idf.fr/" title="lien cci" target="_blank">
+                        <img src="assets/images/cci-paris.png" name="logo cci" alt="logo_CCI">
+                    </a>
+                  </div>
             </div>
             
             <nav>
@@ -465,7 +461,7 @@
                 
             </form>
             <div class="submitResetButton">
-                <button type="submit">Envoyer</button>
+                <button type="submit" onclick="alert('Demande envoyée !');">Envoyer</button>
             </div>
         </section>
         <footer>
@@ -479,8 +475,26 @@
                 </ul>
             </div>
             <div id="copyright">
-                <p>© 2020 Copyright | <a href="https://codingfactory.fr/" target="_blank">Developped by CodingFacorty</a> | <a href="poulpe.html" target="_blank">Kraken</a>, Inc | <a href="mentionsLegals.html">Mentions Légales</a></p>
+                <p>© 2020 Copyright <a href="poulpe.html" target="_blank">Kraken</a>, Inc | <a href="https://codingfactory.fr/" target="_blank">Powered by CodingFactory</a> | <a href="mentionsLegals.html">Mentions Légales</a></p>
             </div>
         </footer>
     </body>
+    <script>
+        var slideIndex = 0;
+        function carousel() {
+            var i = 0;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) 
+            {
+                x[i].style.display = "none";
+            }
+            x[slideIndex].style.display = "block";
+            slideIndex++;
+            if (slideIndex == x.length) {
+            slideIndex = 0
+            }
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        carousel();
+    </script>
 </html>
