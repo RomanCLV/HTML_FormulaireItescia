@@ -365,7 +365,8 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     box-shadow: 5px 5px 5px black;
-    color: rgb(206, 6, 43);
-    background-color: white;
+    background-color: rgb(206, 6, 43);
+    color: white;
     transition-duration : 0.5s
+
 }
