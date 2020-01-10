@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Comuc';
+    src: url('assets/polices/Comuc.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'clipregular';
+    src: url('assets/polices/clip-webfont.woff2') format('woff2'),
+		 url('assets/polices/clip-webfont.woff') format('woff'),
+		 url('assets/polices/Clip.ttf') format('truetype');
+		 
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
 	margin: 0px;
 }
@@ -66,7 +81,7 @@ h1{
 	text-align: center;
 	font-size: 3em;
 	font-weight: lighter;
-	font-family: "Calibri","Open Sans",sans-serif;
+	font-family: 'Clip', "Calibri","Open Sans",sans-serif;
 }
 
 h2{
@@ -305,18 +320,27 @@ footer div{
 
 #logofb{
     color:#DDDDDD;
+	transition-duration: 0.5s;
+}
+#logofb:hover, #logoinsta:hover, #logolinkedin:hover, #logotwitter:hover, #logoyt:hover{
+	transition-duration: 0.5s;
+    color:rgb(6, 206, 169);
 }
 #logoinsta{
     color:#DDDDDD;
+	transition-duration: 0.5s;
 }
 #logolinkedin{
     color:#DDDDDD;
+	transition-duration: 0.5s;
 }
 #logoyt{
     color:#DDDDDD;
+	transition-duration: 0.5s;
 }
 #logotwitter{
     color:#DDDDDD;
+	transition-duration: 0.5s;
 }
 
 #copyright a{
