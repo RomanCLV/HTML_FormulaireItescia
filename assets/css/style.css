@@ -5,8 +5,8 @@
 
 @font-face {
     font-family: 'clipregular';
-    src: url('assets/polices/clip-webfont.woff2') format('woff2'),
-		 url('assets/polices/clip-webfont.woff') format('woff'),
+    src: url('assets/polices/webfontkit-clip/clip-webfont.woff2') format('woff2'),
+		 url('assets/polices/webfontkit-clip/clip-webfont.woff') format('woff'),
 		 url('assets/polices/Clip.ttf') format('truetype');
 		 
     font-weight: normal;
@@ -81,7 +81,7 @@ h1{
 	text-align: center;
 	font-size: 3em;
 	font-weight: lighter;
-	font-family: 'Clip', "Calibri","Open Sans",sans-serif;
+	font-family: 'clipregular', "Calibri","Open Sans",sans-serif;
 }
 
 h2{
