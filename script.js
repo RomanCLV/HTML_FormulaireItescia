@@ -9,7 +9,7 @@ function carousel() {
   }
   x[slideIndex].style.display = "block";
   slideIndex++;
-  if (slideIndex > x.length) {
+  if (slideIndex == x.length) {
     slideIndex = 0
   }
   setTimeout(carousel, 2000); // Change image every 2 seconds
